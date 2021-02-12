@@ -1,0 +1,10 @@
+body {
+    font-size: 18px;
+    font-family: "Roboto";
+}
+
+button {
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: "Roboto";
+}

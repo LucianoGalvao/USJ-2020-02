@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #d5d9eb;
+        font-size: 20px;
+      }
+
+      .tabela {
+        text-align: center;
+        width: 60%;
+        margin-left: 20%;
+      }
+
+      .button {
+        margin-left: 40%;
+      }
+
+      .hide-image {
+        display: none;
+        z-index: 100;
+        position: absolute;
+      }
+      .preview-movie:hover .hide-image {
+        display: block;
+        position: absolute;
+        top: 30%;
+        margin-left: 12%;
+      }
+      .preview-foods:hover .hide-image {
+        display: block;
+        position: absolute;
+        top: 100%;
+      }
+      .preview-foods-country:hover .hide-image {
+        display: block;
+        position: absolute;
+        top: 120%;
+        margin-left: 10%;
+      }
+      .preview-musics:hover .hide-image {
+        display: block;
+        position: absolute;
+        top: 160%;
+        margin-left: 12%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="jumbotron">
+        <h1 class="display-4 text-center">Exercício Bootstrap - Favoritos</h1>
+      </div>
+
+      <table class="tabela table table-bordered table-dark table-striped">
+        <colgroup>
+          <col span="1" style="width: 15%" />
+          <col span="1" style="width: 70%" />
+          <col span="1" style="width: 15%" />
+        </colgroup>
+        <tr>
+          <th colspan="3">TOP 5 FILMES</th>
+        </tr>
+        <tr>
+          <th style="width: 15%"></th>#</th>
+          <th>Nome:</th>
+          <th>Ano:</th>
+        </tr>
+        <tr>
+          <th>1</th>
+          <th class="preview-movie">
+            Fight Club (Clube da Luta)
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg"
+              class="hide-image"
+            />
+          </th>
+          <th>1999</th>
+        </tr>
+        <tr>
+          <th>2</th>
+          <th class="preview-movie">
+            The Dark Knight (Batman: O Cavaleiro das Trevas)
+            <img
+              src="https://upload.wikimedia.org/wikipedia/pt/thumb/d/d1/The_Dark_Knight.jpg/250px-The_Dark_Knight.jpg"
+              class="hide-image"
+            />
+          </th>
+          <th>1999</th>
+        </tr>
+        <tr>
+          <th>3</th>
+          <th class="preview-movie">
+            Avengers: Infinity War (Vingadores: Guerra Infinita)
+            <img
+              src="https://upload.wikimedia.org/wikipedia/pt/thumb/9/90/Avengers_Infinity_War.jpg/250px-Avengers_Infinity_War.jpg"
+              class="hide-image"
+            />
+          </th>
+          <th>2008</th>
+        </tr>
+        <tr>
+          <th>4</th>
+          <th class="preview-movie">
+            The Matrix (Matrix)
+            <img
+              src="https://upload.wikimedia.org/wikipedia/pt/c/c1/The_Matrix_Poster.jpg"
+              class="hide-image"
+            />
+          </th>
+          <th>1999</th>
+        </tr>
+        <tr>
+          <th>5</th>
+          <th class="preview-movie">
+            2 Fast 2 Furious (+ Velozes + Furiosos)
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/9/9d/Two_fast_two_furious_ver5.jpg"
+              class="hide-image"
+            />
+          </th>
+          <th>2003</th>
+        </tr>
+      </table>
+
+      <table class="tabela table table-bordered table-dark">
+        <colgroup>
+          <col span="1" style="width: 15%" />
+          <col span="1" style="width: 70%" />
+          <col span="1" style="width: 15%" />
+        </colgroup>
+        <tr>
+          <th colspan="3">TOP 5 COMIDAS</th>
+        </tr>
+        <tr>
+          <th>#</th>
+          <th>Nome:</th>
+          <th>Origem:</th>
+        </tr>
+        <tr>
+          <th>1</th>
+          <th class="preview-foods">
+            Estrogonofe de Carne (Бефстроганов)
+            <img
+              src="https://espetinhodesucesso.com.br/wp-content/uploads/2018/08/qual-a-melhor-carne-para-strogonoff.jpg"
+              class="hide-image"
+            />
+          </th>
+          <th class="preview-foods-country">
+            Rússia
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/125px-Flag_of_Russia.svg.png"
+              class="hide-image"
+            />
+          </th>
+        </tr>
+        <tr>
+          <th>2</th>
+          <th class="preview-foods">
+            Lasanha (Lasagne al forno)
+            <img
+              src="https://www.tribugolosa.com/uploads/media/lasagne-alla-bolognese-hem1.jpg?1389133420"
+              class="hide-image"
+            />
+          </th>
+          <th class="preview-foods-country">
+            Itália
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/125px-Flag_of_Italy.svg.png"
+              class="hide-image"
+            />
+          </th>
+        </tr>
+        <tr>
+          <th>3</th>
+          <th class="preview-foods">
+            Churrasco
+            <img
+              src="https://doutorgourmet.files.wordpress.com/2013/05/churrasco-2.jpg"
+              class="hide-image"
+            />
+          </th>
+          <th class="preview-foods-country">
+            Brasil
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/125px-Flag_of_Italy.svg.png"
+              class="hide-image"
+            />
+          </th>
+        </tr>
+        <tr>
+          <th>4</th>
+          <th class="preview-foods">
+            Sushi (すし)
+            <img
+              src="https://apartamento702.com.br/wp-content/uploads/2016/04/Sushis-em-Natal.jpg"
+              class="hide-image"
+            />
+          </th>
+          <th class="preview-foods-country">
+            Japão
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/125px-Flag_of_Japan.svg.png"
+              class="hide-image"
+            />
+          </th>
+        </tr>
+        <tr>
+          <th>5</th>
+          <th class="preview-foods">
+            Espaguete à Carbonara (Spaghetti alla Carbonara)
+            <img
+              src="https://conteudo.imguol.com.br/c/entretenimento/d0/2020/04/03/spaghetti-alla-carbonara-1585940968110_v2_615x300.jpg"
+              class="hide-image"
+            />
+          </th>
+          <th class="preview-foods-country">
+            Itália
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/125px-Flag_of_Italy.svg.png"
+              class="hide-image"
+            />
+          </th>
+        </tr>
+      </table>
+
+      <table class="tabela table table-bordered table-dark">
+        <colgroup>
+          <col span="1" style="width: 15%" />
+          <col span="1" style="width: 70%" />
+          <col span="1" style="width: 15%" />
+        </colgroup>
+        <tr>
+          <th colspan="3">TOP 5 MÚSICAS</th>
+        </tr>
+        <tr>
+          <th>#</th>
+          <th>Nome:</th>
+          <th>Ano:</th>
+        </tr>
+        <tr>
+          <th>1</th>
+          <th class="preview-musics">
+            Stairway to Heaven - Led Zeppelin
+            <img
+              src="https://lh3.googleusercontent.com/proxy/tz8ARNpz5uiPPcY0M7xqIWCebdMGN6NqoGAmTDIThTxKxhjxeH64pOk2dHrKhVU9L8-ggmNJPFfl8cDn8vlfGD-bUtTmk-spONcf7_XPhy3-z1CjplvDHCCkQYPHR7M2"
+              class="hide-image"
+            />
+          </th>
+          <th>1971</th>
+        </tr>
+        <tr>
+          <th>2</th>
+          <th class="preview-musics">
+            Carolina IV - Angra
+            <img
+              src="https://roadie-metal.com/wp-content/uploads/2020/11/angra02.jpg"
+              class="hide-image"
+            />
+          </th>
+          <th>1996</th>
+        </tr>
+        <tr>
+          <th>3</th>
+          <th class="preview-musics">
+            Pride and Joy - Stevie Ray Vaughan
+            <img
+              src="https://tecnoblog.net/meiobit/wp-content/uploads/2015/08/20150827stevie_ray_vaughan.jpg"
+              class="hide-image"
+            />
+          </th>
+          <th>1983</th>
+        </tr>
+        <tr>
+          <th>4</th>
+          <th class="preview-musics">
+            Arabella - Arctic Monkeys
+            <img
+              src="https://www.hojeemdia.com.br/polopoly_fs/1.705383!/image/image.jpg_gen/derivatives/landscape_653/image.jpg"
+              class="hide-image"
+            />
+          </th>
+          <th>2013</th>
+        </tr>
+        <tr>
+          <th>5</th>
+          <th class="preview-musics">
+            Aces High - Iron Maiden
+            <img
+              src="https://www.telegraph.co.uk/multimedia/archive/01687/iron-maiden-group_1687230c.jpg"
+              class="hide-image"
+            />
+          </th>
+          <th>1984</th>
+        </tr>
+      </table>
+
+      <div class="button">
+        <a class="btn btn-primary btn-lg" href="index.html" role="button"
+          >Clique aqui para voltar</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
